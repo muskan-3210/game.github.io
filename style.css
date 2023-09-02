@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.game{
+    width: 600px;
+    height: 270px;
+    margin: auto;
+    border: 2px solid #000;
+    margin-top: 6vh;
+}
+#ice{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 26vh;
+    left: 580px;
+    background-image: url(iceberg-2070977_1280.png);
+    background-size: 20px 40px;
+    animation: ice-block 1.2s infinite linear;
+}
+#pg{
+    width: 50px;
+    height: 70px;
+    background-image: url(penguin-4446199_1280.png);
+    background-repeat: no-repeat;
+    background-size: auto 70px;
+    position: relative;
+    top: 32vh;
+}
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 143px;
+        /*distance from the top of the parent element*/
+    }
+    30% {
+        top: 115px;
+    }
+    50% {
+        top: 70px;
+    }
+    80% {
+        top: 115px;
+    }
+    100% {
+        top: 143px;
+    }
+}
+@keyframes ice-block {
+    0% {
+        left: 600px;
+    }
+    100% {
+        left: -20px;
+    }
+}
